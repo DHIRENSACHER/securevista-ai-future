@@ -195,6 +195,23 @@ const Landing = () => {
         </div>
       </section>
 
+      {/* Dashboard Access Section */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 border-t border-muted/20">
+        <div className="max-w-2xl mx-auto text-center">
+          <h3 className="text-xl font-semibold text-foreground mb-4">
+            Already a member?
+          </h3>
+          <Link 
+            to="/dashboard" 
+            className="btn-surveillance group inline-flex items-center space-x-2 text-lg px-8 py-4"
+          >
+            <Shield className="h-5 w-5" />
+            <span>Access Dashboard</span>
+            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
