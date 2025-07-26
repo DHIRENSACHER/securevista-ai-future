@@ -39,16 +39,6 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              to="/dashboard"
-              className={`text-sm font-medium transition-all duration-200 ${
-                isActive("/dashboard")
-                  ? "text-primary border-b-2 border-primary pb-1"
-                  : "text-foreground hover:text-primary"
-              }`}
-            >
-              Dashboard
-            </Link>
-            <Link
               to="/login"
               className="btn-ghost-surveillance text-sm"
             >
@@ -88,15 +78,6 @@ const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Home
-            </Link>
-            <Link
-              to="/dashboard"
-              className={`block text-sm font-medium transition-all duration-200 ${
-                isActive("/dashboard") ? "text-primary" : "text-foreground hover:text-primary"
-              }`}
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Dashboard
             </Link>
             <Link
               to="/login"
