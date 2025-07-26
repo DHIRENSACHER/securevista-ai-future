@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* SecureVista AI Surveillance Dashboard Design System
+High-contrast futuristic cyberpunk aesthetic for control rooms
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Surveillance Theme Colors */
+    --background: 0 0% 6%;           /* Jet Black */
+    --foreground: 0 0% 98%;          /* Pure White */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 10%;                /* Dark Card Background */
+    --card-foreground: 0 0% 98%;     /* White Text */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 351 79% 50%;          /* Scarlet Red #D72638 */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 45%;           /* Metallic Gray */
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 20%;               /* Dark Muted */
+    --muted-foreground: 0 0% 70%;    /* Light Gray Text */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 0% 25%;              /* Accent Gray */
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 25%;              /* Dark Border */
+    --input: 0 0% 15%;               /* Dark Input */
+    --ring: 351 79% 50%;             /* Scarlet Focus Ring */
 
-    --radius: 0.5rem;
+    /* Surveillance Specific Colors */
+    --surveillance-glow: 351 79% 50%;        /* Scarlet Glow */
+    --surveillance-success: 142 76% 36%;     /* Green for Active */
+    --surveillance-warning: 43 96% 56%;      /* Amber for Warning */
+    --surveillance-danger: 351 79% 50%;      /* Scarlet for Alert */
+    
+    /* Glassmorphism Effects */
+    --glass-bg: 0 0% 10% / 0.8;
+    --glass-border: 0 0% 30% / 0.3;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(351 79% 50% / 0.9), hsl(351 79% 35% / 0.7));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 15%), hsl(0 0% 25%));
+    --gradient-glow: linear-gradient(45deg, transparent, hsl(351 79% 50% / 0.3), transparent);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(351 79% 50% / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.5);
+    --shadow-intense: 0 0 50px hsl(351 79% 50% / 0.5);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +123,105 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+/* Custom Components & Animations */
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-lg border border-white/10 rounded-lg;
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* Surveillance Glow Effect */
+  .surveillance-glow {
+    @apply relative;
+  }
+  
+  .surveillance-glow::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg;
+    background: var(--gradient-glow);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .surveillance-glow:hover::before {
+    opacity: 1;
+  }
+  
+  /* Matrix Grid Background */
+  .matrix-bg {
+    background-image: 
+      linear-gradient(rgba(215, 38, 56, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(215, 38, 56, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: matrix-scroll 20s linear infinite;
+  }
+  
+  /* Pulse Animation */
+  .pulse-scarlet {
+    animation: pulse-scarlet 2s ease-in-out infinite;
+  }
+  
+  /* Hero Text Glow */
+  .text-glow {
+    text-shadow: 0 0 20px hsl(351 79% 50% / 0.5);
+  }
+  
+  /* Button Variants */
+  .btn-surveillance {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold;
+    @apply hover:shadow-[0_0_30px_hsl(351_79%_50%_/_0.4)] transition-all duration-300;
+    @apply border border-primary/30;
+  }
+  
+  .btn-ghost-surveillance {
+    @apply bg-transparent text-foreground px-6 py-3 rounded-lg font-semibold;
+    @apply border border-foreground/20 hover:border-primary hover:text-primary;
+    @apply hover:shadow-[0_0_20px_hsl(351_79%_50%_/_0.3)] transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  /* Custom Keyframes */
+  @keyframes matrix-scroll {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+  }
+  
+  @keyframes pulse-scarlet {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(351 79% 50% / 0.4);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(351 79% 50% / 0.8);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
   }
 }
