@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Eye, Shield, Zap, Users, BarChart3, Lock } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import heroBackground from "../assets/surveillance-hero-bg.jpg";
 
 const Landing = () => {
   return (
@@ -10,18 +9,29 @@ const Landing = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBackground})` }}
-        />
-        
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/70" />
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-background">
+        {/* Floating 3D Objects */}
+        <div className="absolute inset-0">
+          {/* Floating Cubes */}
+          <div className="absolute top-20 left-20 w-16 h-16 bg-muted-foreground/20 shadow-2xl animate-float transform-gpu perspective-1000 rotate-x-12 rotate-y-45" style={{animationDelay: '0s', filter: 'blur(0.5px)'}}></div>
+          <div className="absolute top-40 right-32 w-12 h-12 bg-muted-foreground/15 shadow-xl animate-float transform-gpu perspective-1000 rotate-x-24 rotate-y-12" style={{animationDelay: '2s', filter: 'blur(0.3px)'}}></div>
+          <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-muted-foreground/25 shadow-2xl animate-float transform-gpu perspective-1000 rotate-x-36 rotate-y-72" style={{animationDelay: '4s', filter: 'blur(0.7px)'}}></div>
+          
+          {/* Floating Triangles */}
+          <div className="absolute top-1/3 right-20 w-0 h-0 border-l-8 border-r-8 border-b-16 border-l-transparent border-r-transparent border-b-muted-foreground/20 shadow-lg animate-float transform-gpu rotate-45" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-40 right-1/4 w-0 h-0 border-l-12 border-r-12 border-b-24 border-l-transparent border-r-transparent border-b-muted-foreground/15 shadow-xl animate-float transform-gpu rotate-12" style={{animationDelay: '3s'}}></div>
+          
+          {/* Floating Circles */}
+          <div className="absolute top-60 left-1/3 w-14 h-14 bg-muted-foreground/20 rounded-full shadow-2xl animate-float transform-gpu" style={{animationDelay: '0.5s', filter: 'blur(0.4px)'}}></div>
+          <div className="absolute bottom-20 right-40 w-10 h-10 bg-muted-foreground/25 rounded-full shadow-lg animate-float transform-gpu" style={{animationDelay: '2.5s', filter: 'blur(0.2px)'}}></div>
+          
+          {/* Floating Hexagons */}
+          <div className="absolute top-32 left-1/2 w-12 h-12 bg-muted-foreground/15 shadow-xl animate-float transform-gpu rotate-30" style={{clipPath: 'polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)', animationDelay: '1.5s'}}></div>
+          <div className="absolute bottom-60 left-40 w-16 h-16 bg-muted-foreground/20 shadow-2xl animate-float transform-gpu rotate-60" style={{clipPath: 'polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)', animationDelay: '3.5s'}}></div>
+        </div>
         
         {/* Matrix Background Animation */}
-        <div className="absolute inset-0 matrix-bg opacity-30" />
+        <div className="absolute inset-0 matrix-bg opacity-10" />
         
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
