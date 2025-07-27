@@ -1,319 +1,186 @@
-# 🛡️ SecureVista - AI-Driven Campus Surveillance System
-
 <div align="center">
 
-![Project Status](https://img.shields.io/badge/Status-🚀%20Active-brightgreen)
-![AI Powered](https://img.shields.io/badge/AI-🤖%20Powered-blue)
-![Real Time](https://img.shields.io/badge/Real%20Time-⚡%20Lightning%20Fast-yellow)
-![Security](https://img.shields.io/badge/Security-🔒%20Top%20Priority-red)
-
-**Transform boring, passive CCTV systems into smart, real-time, AI-powered security networks!**
-
-[🎯 Live Demo](https://lovable.dev/projects/dab2f711-e1a6-4668-8946-89157f2fe8a9) • [📖 Documentation](#) • [🐛 Report Bug](#-contact--feedback) • [💡 Request Feature](#-contact--feedback)
+  <h1>🔐 SecureVista 🔐</h1>
+  <h3><em>Redefining campus safety through smart, AI-powered surveillance.</em></h3>
 
 </div>
 
----
+<!-- Terminal Intro Animation -->
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2000&pause=800&color=00FFFF&center=true&width=600&lines=Initializing+SecureVista+AI+Module...;Booting+Surveillance+Systems...;Activating+Real-Time+Detection...;Enhancing+Campus+Security...;System+Ready!" alt="Terminal Animation">
+</div>
 
-## 🚀 Overview
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider">
 
-**SecureVista** revolutionizes campus security by turning traditional surveillance systems into intelligent, proactive guardians! 🤖✨
+## 🎯 Problem & Inspiration
 
-🎯 **What problem does it solve?**
-- Traditional CCTV systems are reactive and require constant human monitoring
-- Security threats often go undetected until it's too late
-- Manual surveillance is expensive, prone to human error, and inefficient
+<table>
+<tr>
+<td>
 
-🔥 **Why is it awesome?**
-- **Real-time AI detection** of security threats and suspicious behavior
-- **Automated alerts** sent instantly to security teams
-- **Smart analytics** that learn and adapt to your environment
-- **24/7 monitoring** without human fatigue or oversight gaps
+Traditional CCTV systems are reactive and unreliable under human supervision. 94% of institutions have surveillance systems, but human operators miss up to 95% of incidents within 20 minutes due to fatigue.
 
----
+**SecureVista** transforms passive cameras into smart, proactive guardians that monitor, analyze, and alert in real time — making campuses safer and smarter.
 
-## 🔧 Features
+</td>
+<td width="40%">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2Q5YmM2Mzg1M2QxMmE3YjZiZTk4NzkwZDc3MTNiNGM5ZmY3ZjM1ZiZjdD1n/xT9IglAXYxGd9KzFLO/giphy.gif" width="100%">
+</td>
+</tr>
+</table>
 
-<details>
-<summary>🎯 <strong>Core AI Detection Features</strong></summary>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=divider">
 
-### 🧠 Advanced AI Capabilities
-- **📢 Real-Time Alerts** - Instant notifications for security events
-- **🕵️‍♂️ Loitering Detection** - Identifies suspicious lingering behavior
-- **🤕 Fall Detection** - Immediate alerts for medical emergencies
-- **🧍‍♂️🪑 Pose Estimation** - Advanced human behavior analysis
-- **🧳 Abandoned Object Monitoring** - Detects unattended bags/items
-- **🎯 Object Detection with YOLOv8** - State-of-the-art computer vision
-- **🧠 Behavior Tracking & Centroid-based Person ID** - Smart person tracking
+## 🧠 What It Does
 
-</details>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><h3>🔍</h3><h4>Real-Time Alerts</h4><p>Instant anomaly notifications</p></td>
+      <td align="center"><h3>🚶</h3><h4>Loitering Detection</h4><p>Flags prolonged presence in restricted zones</p></td>
+    </tr>
+    <tr>
+      <td align="center"><h3>🤕</h3><h4>Fall Detection</h4><p>Triggers emergency alerts on falls</p></td>
+      <td align="center"><h3>🎯</h3><h4>YOLOv8 Detection</h4><p>Identifies objects and activities in real-time</p></td>
+    </tr>
+    <tr>
+      <td align="center"><h3>📦</h3><h4>Abandoned Object Monitoring</h4><p>Detects unattended objects in public spaces</p></td>
+      <td align="center"><h3>🧍‍♂️🪑</h3><h4>Pose Estimation</h4><p>Exam posture detection to prevent cheating</p></td>
+    </tr>
+    <tr>
+      <td align="center"><h3>👁️</h3><h4>Centroid Tracking</h4><p>Tracks entry/exit of individuals with unique IDs</p></td>
+      <td align="center"><h3>📤</h3><h4>Automated Reporting</h4><p>Sends real-time alerts via Twilio & PyWhatKit</p></td>
+    </tr>
+  </table>
+</div>
 
-<details>
-<summary>📊 <strong>Analytics & Reporting</strong></summary>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-### 📈 Smart Analytics Dashboard
-- **📊 Automated Reporting** - Generate security reports automatically
-- **📋 Real-time Analytics** - Live security metrics and insights
-- **🎨 Interactive Dashboard** - Beautiful, responsive web interface
-- **📱 Mobile Notifications** - Get alerts anywhere, anytime
-- **📊 Data Visualization** - Charts, graphs, and heat maps
-
-</details>
-
-<details>
-<summary>🔐 <strong>Security & Integration</strong></summary>
-
-### 🛡️ Enterprise-Ready Security
-- **🔒 Secure Authentication** - Multi-factor authentication support
-- **🔥 Firebase Integration** - Reliable cloud infrastructure
-- **📞 Twilio Alerts** - SMS and voice notifications
-- **🐘 PostgreSQL Database** - Robust data storage and management
-- **⚡ WebSocket Streaming** - Real-time video feeds
-
-</details>
-
----
-
-## 🧰 Tech Stack
+## ⚙️ Tech Stack
 
 <div align="center">
 
-| Category | Technologies |
-|----------|-------------|
-| **🤖 AI/ML** | ![Python](https://img.shields.io/badge/Python-🐍-blue) ![OpenCV](https://img.shields.io/badge/OpenCV-👁️-green) ![MediaPipe](https://img.shields.io/badge/MediaPipe-🖐️-orange) |
-| **⚡ Backend** | ![Flask](https://img.shields.io/badge/Flask/FastAPI-⚡-red) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-🐘-blue) |
-| **🔥 Cloud** | ![Firebase](https://img.shields.io/badge/Firebase-🔥-yellow) ![Twilio](https://img.shields.io/badge/Twilio-📞-purple) |
-| **💻 Frontend** | ![React](https://img.shields.io/badge/React-⚛️-cyan) ![TypeScript](https://img.shields.io/badge/TypeScript-🔷-blue) ![Tailwind](https://img.shields.io/badge/Tailwind-🎨-teal) |
-| **🔧 Tools** | ![Dlib](https://img.shields.io/badge/Dlib-💻-gray) ![YOLOv8](https://img.shields.io/badge/YOLOv8-🎯-darkgreen) |
+🐍 Python • 📹 OpenCV • 🧠 YOLOv8 • 🖐️ MediaPipe • 🌐 Flask / FastAPI  
+💬 Twilio • 🔥 Firebase • 🐘 PostgreSQL • 📧 smtplib • 📊 NumPy • 🧵 threading
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:f7971e,100:ffd200&height=100&section=divider&text=Target%20Users&fontColor=ffffff&fontSize=28&animation=twinkling">
 
-## 👥 Target Users
+## 🎓 Target Users
+
+- 🏫 **Schools, Colleges, Hostels** – Student safety, intrusion alerts, and exam integrity  
+- 🏢 **Offices, Hospitals, Shops** – Real-time alerts, motion detection, object monitoring  
+- 🏘️ **Homes & Societies** – Perimeter automation, fall detection, and elderly safety
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 🏗️ How We Built It
+
+<table>
+<tr>
+<td>
+
+SecureVista leverages AI and modern backend technologies:
+
+- 🧵 Background AI thread pipelines
+- 🌐 WebSockets for real-time data updates
+- 🧠 YOLOv8 for object detection
+- 🖐️ MediaPipe for pose estimation
+- 📹 MOG2 for motion detection
+- 🔥 Firebase for authentication
+- 🐘 PostgreSQL for data storage
+
+All modules run in microservices communicating via REST and WebSocket for lightning-fast response.
+
+</td>
+<td width="40%">
+<img src="https://media.giphy.com/media/l2JHRhAtnJSDNJ2py/giphy.gif" width="100%">
+</td>
+</tr>
+</table>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=divider&text=Roadmap&fontColor=ffffff&fontSize=28&animation=twinkling">
+
+## 🗺️ Roadmap
+
+- ✅ Campus Security MVP complete  
+- 🧪 Academic Integrity Monitoring (pose + pupil detection)  
+- 🔐 Blockchain-based identity integration  
+- 📈 Reach 20% lead-to-customer conversion  
+- 💼 Maintain 90%+ customer retention with excellent support
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider">
+
+## 📸 Demo Screenshots
 
 <div align="center">
-
-### 🎯 Perfect for Organizations That Care About Security
-
-| 🏫 **Schools & Colleges** | 🏢 **Corporate Offices** |
-|:-------------------------:|:------------------------:|
-| Campus safety monitoring | Employee security |
-| Exam integrity tracking | Access control |
-| Emergency response | Workplace safety |
-
-| 🏥 **Hospitals** | 🏘️ **Residential Societies** |
-|:----------------:|:----------------------------:|
-| Patient safety | Community security |
-| Staff monitoring | Visitor management |
-| Emergency detection | Property protection |
-
+  <table>
+    <tr>
+      <td><img src="https://via.placeholder.com/400x225.png?text=Live+Dashboard" alt="Dashboard"></td>
+      <td><img src="https://via.placeholder.com/400x225.png?text=Alert+View" alt="Alert View"></td>
+    </tr>
+    <tr>
+      <td><img src="https://via.placeholder.com/400x225.png?text=Pose+Estimation+Module" alt="Pose Detection"></td>
+      <td><img src="https://via.placeholder.com/400x225.png?text=Person+Tracker" alt="Person Tracker"></td>
+    </tr>
+  </table>
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8e2de2,100:4a00e0&height=100&section=divider&text=Demo&fontColor=ffffff&fontSize=28">
 
-## 🧠 How It Works
-
-<details>
-<summary>🔍 <strong>Click to see the magic behind SecureVista!</strong></summary>
-
-### 🚀 AI Pipeline Architecture
-
-```mermaid
-graph TD
-    A[📹 Camera Feed] --> B[🤖 AI Processing]
-    B --> C[🕵️ Behavior Analysis]
-    B --> D[🎯 Object Detection]
-    B --> E[🧍 Pose Estimation]
-    
-    C --> F[⚠️ Alert System]
-    D --> F
-    E --> F
-    
-    F --> G[📱 Mobile Notifications]
-    F --> H[📊 Dashboard Updates]
-    F --> I[📧 Email Alerts]
-    
-    J[🔥 Firebase] --> H
-    K[🐘 PostgreSQL] --> H
-```
-
-### ⚡ Real-Time Processing
-1. **📹 Video Capture** - Multiple camera feeds processed simultaneously
-2. **🤖 AI Analysis** - YOLOv8 and MediaPipe working in harmony
-3. **🧠 Smart Detection** - Multithreaded pipelines for real-time analysis
-4. **📡 Live Streaming** - WebSocket-powered dashboard updates
-5. **🚨 Instant Alerts** - Sub-second notification delivery
-
-</details>
-
----
-
-## 🛠️ Setup & Installation
-
-<details>
-<summary>🚀 <strong>Quick Start Guide</strong></summary>
-
-### 📋 Prerequisites
-```bash
-# Install Python 3.8+
-python --version
-
-# Install Node.js 16+
-node --version
-```
-
-### 🔧 Backend Setup
-```bash
-# Clone the repository
-git clone <YOUR_GIT_URL>
-cd SecureVista
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your Firebase and Twilio credentials
-```
-
-### 🎨 Frontend Setup
-```bash
-# Install frontend dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### 🔥 Firebase Configuration
-1. Create a Firebase project
-2. Enable Authentication and Firestore
-3. Add your config to `.env`
-4. Initialize Firebase in your project
-
-### 🚀 Launch the System
-```bash
-# Start backend server
-python app.py
-
-# Start frontend (in another terminal)
-npm run dev
-
-# Visit http://localhost:5173
-```
-
-</details>
-
----
-
-## 📅 Roadmap
+## 📽️ Demo Video
 
 <div align="center">
-
-### 🗺️ Our Journey to the Future
-
-| Phase | Status | Features |
-|-------|--------|----------|
-| **🏗️ Phase 1** | ✅ **Complete** | Campus Safety MVP, Basic AI Detection |
-| **🔬 Phase 2** | 🚧 **In Progress** | Exam Cheating Detection, Advanced Pose Estimation |
-| **🔐 Phase 3** | 📋 **Planned** | Blockchain Identity System, Enhanced Privacy |
-| **📈 Phase 4** | 🎯 **Vision** | Customer Growth Platform, Advanced Analytics |
-
-### 🎯 Upcoming Features
-- [ ] 👨‍🎓 **Exam Integrity Monitor** - AI-powered cheating detection
-- [ ] 🔗 **Blockchain Identity** - Decentralized security verification
-- [ ] 📊 **Advanced Analytics** - Predictive behavior modeling
-- [ ] 🌐 **Multi-language Support** - Global accessibility
-- [ ] 📱 **Mobile App** - On-the-go security management
-
+  <a href="https://your-demo-link.com" target="_blank">
+    <img src="https://img.shields.io/badge/▶️-Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Demo">
+  </a>
 </div>
 
----
-
-## 🤝 Contributing
-
-<details>
-<summary>🎉 <strong>Join the SecureVista Community!</strong></summary>
-
-### 🌟 How to Contribute
-
-We love contributions! Here's how you can help make SecureVista even better:
-
-#### 🚀 Quick Start
-```bash
-# 1. 🍴 Fork the repository
-# 2. 📥 Clone your fork
-git clone https://github.com/yourusername/SecureVista.git
-
-# 3. 🌿 Create a feature branch
-git checkout -b feature/amazing-new-feature
-
-# 4. 💻 Make your changes
-# 5. ✅ Test your changes
-npm test
-
-# 6. 📝 Commit your changes
-git commit -m "✨ Add amazing new feature"
-
-# 7. 🚀 Push to your branch
-git push origin feature/amazing-new-feature
-
-# 8. 🎯 Open a Pull Request
-```
-
-#### 🎯 Ways to Contribute
-- 🐛 **Report Bugs** - Help us squash those pesky bugs!
-- 💡 **Suggest Features** - Share your brilliant ideas!
-- 📝 **Improve Documentation** - Make it easier for everyone!
-- 🎨 **Design Improvements** - Make it more beautiful!
-- 🧪 **Write Tests** - Help us maintain quality!
-
-#### 📋 Contribution Guidelines
-- Follow our coding standards
-- Write descriptive commit messages
-- Include tests for new features
-- Update documentation as needed
-
-</details>
-
----
-
-## 📬 Contact / Feedback
+## 📂 Project Info Deck
 
 <div align="center">
-
-### 💬 We'd Love to Hear From You!
-
-Got questions? Found a bug? Have a brilliant idea? We're all ears! 👂
-
-[![Email](https://img.shields.io/badge/📧%20Email-Contact%20Us-blue)](mailto:team@securevista.com)
-[![Discord](https://img.shields.io/badge/💬%20Discord-Join%20Community-purple)](https://discord.gg/securevista)
-[![Twitter](https://img.shields.io/badge/🐦%20Twitter-Follow%20Us-1da1f2)](https://twitter.com/securevista)
-[![GitHub Issues](https://img.shields.io/badge/🐛%20Issues-Report%20Bug-red)](https://github.com/SecureVista/issues)
-
-### 🌟 Show Your Support
-
-If you find SecureVista helpful, please give us a ⭐ on GitHub!
-
-[![GitHub stars](https://img.shields.io/github/stars/SecureVista/SecureVista?style=social)](https://github.com/SecureVista/SecureVista)
-[![GitHub forks](https://img.shields.io/github/forks/SecureVista/SecureVista?style=social)](https://github.com/SecureVista/SecureVista)
-
+  <a href="https://your-infodeck-link.com" target="_blank">
+    <img src="https://img.shields.io/badge/📄-Project_Info_Deck-blue?style=for-the-badge&logo=google-drive&logoColor=white">
+  </a>
 </div>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 🧠 What We Learned
+
+- Designing scalable real-time detection pipelines  
+- Optimizing pose estimation models (MediaPipe)  
+- Handling WebSocket streams & Firebase auth  
+- Reducing alert fatigue with intelligent prioritization
+
 ---
 
+## 🧩 Challenges Faced
+
+- ⚠️ Real-time performance vs AI model complexity  
+- 🔍 Avoiding false positives in object detection  
+- 💾 Syncing live multi-camera feeds  
+- 🧠 Managing memory-heavy ML workloads on limited hardware
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="Divider">
+
+## 🔗 Useful Links
+
 <div align="center">
+  <a href="https://securevista.app">
+    <img src="https://img.shields.io/badge/🌐-Live_Demo-00B0FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo">
+  </a>
+  <a href="https://securevista.docs">
+    <img src="https://img.shields.io/badge/📄-Docs-00C853?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Documentation">
+  </a>
+  <a href="mailto:team@securevista.ai">
+    <img src="https://img.shields.io/badge/📧-Contact_Us-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact">
+  </a>
+</div>
 
-**🛡️ Protecting campuses, one AI detection at a time. 🤖**
+> 🔐 *“A smarter campus isn’t just safe — it’s aware.”*
 
-Made with ❤️ by the SecureVista Team
-
-[![Built with Love](https://img.shields.io/badge/Built%20with-❤️-red)](https://github.com/SecureVista)
-[![Powered by AI](https://img.shields.io/badge/Powered%20by-🤖%20AI-blue)](https://github.com/SecureVista)
-
+<div align="center">
+  <sub>Built with ❤️ by Team HackStreet</sub>
 </div>
